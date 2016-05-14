@@ -1,8 +1,13 @@
 package com.gl.roadaccidents.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 /**
  * Created by gavin on 16-5-13.
  */
+@Entity
+@Table(name="accident_severity")
 public class AccidentSeverity extends BaseEntity{
     private static final long serialVersionUID = 4250045030468883168L;
     private Integer code;

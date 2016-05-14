@@ -1,8 +1,13 @@
 package com.gl.roadaccidents.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 /**
  * Created by gavin on 16-5-13.
  */
+@Entity
+@Table(name="district_authority")
 public class DistrictAuthority extends BaseEntity{
     private static final long serialVersionUID = -4154471858474970218L;
     private Integer code;

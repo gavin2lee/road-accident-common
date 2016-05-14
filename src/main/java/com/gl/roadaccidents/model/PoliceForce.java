@@ -1,8 +1,13 @@
 package com.gl.roadaccidents.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 /**
  * Created by gavin on 16-5-13.
  */
+@Entity
+@Table(name="police_force")
 public class PoliceForce extends BaseEntity{
 
     private static final long serialVersionUID = 6807079984712622546L;

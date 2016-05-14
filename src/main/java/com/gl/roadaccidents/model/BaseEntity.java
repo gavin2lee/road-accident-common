@@ -1,15 +1,20 @@
 package com.gl.roadaccidents.model;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by gavin on 16-5-13.
  */
+@MappedSuperclass
 public abstract class BaseEntity implements Serializable{
 
     private static final long serialVersionUID = 1079866250610374768L;
 
+    @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @Column(name="oid")
     public Long getOid() {
         return oid;
     }
@@ -18,6 +23,7 @@ public abstract class BaseEntity implements Serializable{
         this.oid = oid;
     }
 
+    @Column(name="create_at")
     public Date getCreateAt() {
         return createAt;
     }
@@ -26,6 +32,7 @@ public abstract class BaseEntity implements Serializable{
         this.createAt = createAt;
     }
 
+    @Column(name="update_at")
     public Date getUpdateAt() {
         return updateAt;
     }

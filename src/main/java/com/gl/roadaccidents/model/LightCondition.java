@@ -1,8 +1,13 @@
 package com.gl.roadaccidents.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 /**
  * Created by gavin on 16-5-13.
  */
+@Entity
+@Table(name="light_condition")
 public class LightCondition extends BaseEntity{
     private static final long serialVersionUID = 8451808527791954060L;
     private Integer code;

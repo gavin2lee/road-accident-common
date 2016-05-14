@@ -1,8 +1,13 @@
 package com.gl.roadaccidents.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 /**
  * Created by gavin on 16-5-13.
  */
+@Entity
+@Table(name="weather_condition")
 public class WeatherCondition extends BaseEntity{
 
     private static final long serialVersionUID = -5354129836392368165L;
