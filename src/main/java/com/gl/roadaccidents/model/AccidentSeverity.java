@@ -28,4 +28,12 @@ public class AccidentSeverity extends BaseEntity{
     public void setLabel(String label) {
         this.label = label;
     }
+
+    @Override
+    public String toString() {
+        return super.toString()+"AccidentSeverity{" +
+                "code=" + code +
+                ", label='" + label + '\'' +
+                '}';
+    }
 }

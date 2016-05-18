@@ -45,5 +45,12 @@ public abstract class BaseEntity implements Serializable{
     private Date createAt;
     private Date updateAt;
 
-
+    @Override
+    public String toString() {
+        return "BaseEntity{" +
+                "oid=" + oid +
+                ", createAt=" + createAt +
+                ", updateAt=" + updateAt +
+                '}';
+    }
 }
