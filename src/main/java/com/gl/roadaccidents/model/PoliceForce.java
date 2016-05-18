@@ -30,4 +30,12 @@ public class PoliceForce extends BaseEntity{
     public void setLabel(String label) {
         this.label = label;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +"PoliceForce{" +
+                "code=" + code +
+                ", label='" + label + '\'' +
+                '}';
+    }
 }

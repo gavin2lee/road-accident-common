@@ -23,8 +23,17 @@ public class RoadAccidentBuilder {
     private WeatherCondition weatherCondition;
     private RoadSurface roadSurface;
 
-    public RoadAccidentBuilder(String accidentIndex){
+    private RoadAccidentBuilder(){
+
+    }
+
+    public static final RoadAccidentBuilder newBuilder(){
+        return new RoadAccidentBuilder();
+    }
+
+    public RoadAccidentBuilder setAccidentIndex(String accidentIndex){
         this.accidentIndex = accidentIndex;
+        return this;
     }
 
 

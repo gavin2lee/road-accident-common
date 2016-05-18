@@ -30,4 +30,13 @@ public class WeatherCondition extends BaseEntity{
     public void setLabel(String label) {
         this.label = label;
     }
+
+
+    @Override
+    public String toString() {
+        return super.toString() + "WeatherCondition{" +
+                "code=" + code +
+                ", label='" + label + '\'' +
+                '}';
+    }
 }

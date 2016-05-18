@@ -28,4 +28,12 @@ public class DistrictAuthority extends BaseEntity{
     public void setLabel(String label) {
         this.label = label;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +"DistrictAuthority{" +
+                "code=" + code +
+                ", label='" + label + '\'' +
+                '}';
+    }
 }

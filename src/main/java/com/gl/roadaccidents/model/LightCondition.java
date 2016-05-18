@@ -28,4 +28,12 @@ public class LightCondition extends BaseEntity{
     public void setLabel(String label) {
         this.label = label;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +"LightCondition{" +
+                "code=" + code +
+                ", label='" + label + '\'' +
+                '}';
+    }
 }

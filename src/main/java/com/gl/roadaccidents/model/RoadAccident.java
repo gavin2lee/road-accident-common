@@ -166,4 +166,24 @@ public class RoadAccident extends BaseEntity{
     public void setRoadSurface(RoadSurface roadSurface) {
         this.roadSurface = roadSurface;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +"RoadAccident{" +
+                "accidentIndex='" + accidentIndex + '\'' +
+                ", longitude=" + longitude +
+                ", latitude=" + latitude +
+                ", policeForce=" + policeForce +
+                ", accidentSeverity=" + accidentSeverity +
+                ", numberOfVehicles=" + numberOfVehicles +
+                ", numberOfCasualties=" + numberOfCasualties +
+                ", occurOn=" + occurOn +
+                ", dayOfWeek=" + dayOfWeek +
+                ", occurAt=" + occurAt +
+                ", districtAuthority=" + districtAuthority +
+                ", lightCondition=" + lightCondition +
+                ", weatherCondition=" + weatherCondition +
+                ", roadSurface=" + roadSurface +
+                '}';
+    }
 }
